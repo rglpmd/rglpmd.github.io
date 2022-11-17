@@ -1,0 +1,47 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--index: calc(1vw + 1vh);
+	--side-small: 26;
+	--side-big: 36;
+}
+
+body {
+    background-color: rgba(28, 11, 11, 0.383);
+    color: rgb(235, 235, 26);
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1, h2 {
+    /*Calculer la taille du texte*/
+    font-size: calc(var(--index) * 2);
+}
+
+p {
+    font-size: calc(var(--index) * 1.3);
+    color: black;
+}
+
+a {color: #333;}
+
+button {
+    background-color: #fff;
+    border-radius: 40px;
+}
+
+button {
+    width: calc(var(--index) * (var(--side-small)/2));
+	height: calc(var(--index) * (var(--side-big)/4));
+    font-size: calc(var(--index) * 2);
+}
+
+img {
+    width: 100%;
+	height: 80%;
+    border-radius: 40px;
+}
